@@ -4,3 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
+@layer{
+
+    #toggle-switch::after {
+        content : '';
+        @apply h-full w-1/2 rounded-full bg-white absolute left-0 top-0 transform scale-110 transition-all duration-200
+    }
+    #toggle-switch:checked::after {
+        @apply left-8
+    }
+}
