@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
 import facebook from "../assets/facebook_logo.png";
 import insta from "../assets/insta-logo.png";
@@ -10,11 +10,18 @@ import post1 from "../assets/post-1.png";
 import post2 from "../assets/post-2.png";
 import post3 from "../assets/post-3.png";
 import messageLogo from "../assets/message-logo.png";
-import pen from '../assets/pen.png'
+import pen from "../assets/pen.png";
+import circle from "../assets/Group 2.png";
+import Rosario from "../assets/Rosario-img.png";
+import RosarioIcon from "../assets/Rosario-icon.png";
+import Dan from "../assets/Dan-img.png";
+import DanIcon from "../assets/Dan-icon.png";
+import Switch from "react-switch";
 
 const Main = () => {
+  const [toggled, setToggled] = useState(true);
   return (
-    <div className="flex flex-col relative mx-8 md:mx-28 xl:mx-36 mt-14 px-6 py-12 bg-linear-bg h-[900px] shadow-rgba-shadow border-rgba-gray text-white">
+    <div className="flex flex-col relative mx-8 md:mx-28 xl:mx-36 mt-14 px-6 py-12 bg-linear-bg  shadow-rgba-shadow border-rgba-gray text-white">
       <div className="w-96 flex flex-col">
         <div className="font-paytoneone mb-3">
           <h1 className="text-4xl">ALPINE</h1>
@@ -67,13 +74,126 @@ const Main = () => {
           <div className="my-5 flex justify-center h-8">
             <h3 className="font-paytoneone text-xl mr-2">MARKETING</h3>
             {/* <div className="border-t-2 border-white border-dashed w-full "></div> */}
-           <div className="flex -mt-1"> __ __ __ __ __ __ __ __ __ __ __ __</div> 
-           <div className="flex h-8">
-            <img src={messageLogo} alt="" className="mx-2 h-7" />
-            <button className="flex justify-center items-center py-2 px-4 bg-amber-900 w-36 rounded-2xl text-sm">
-              <img src={pen} alt="" className="mr-2 "/> Start a thread
-            </button>
-           </div>
+            <div className="flex -mt-1">
+              {" "}
+              __ __ __ __ __ __ __ __ __ __ __ __
+            </div>
+            <div className="flex h-8 ">
+              <img src={messageLogo} alt="" className="mx-2 h-7" />
+              <button className="flex justify-center items-center py-2 px-4 bg-amber-900 w-36 rounded-2xl text-sm">
+                <img src={pen} alt="" className="mr-2 " /> Start a thread
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col mt-5 px-14 pb-28">
+          <div className="flex">
+            <div className="flex items-center  w-1/2">
+              <div className="flex flex-col">
+                <div className="flex justify-between">
+                  <div className="flex items-center">
+                    <div className="flex items-center justify-center rounded-full bg-[#FF1640] w-9 h-9 text-xl font-bold mr-2">
+                      1
+                    </div>
+                    <h3 className="flex items-center">Unread Notifications</h3>
+                  </div>
+                  <button className="flex justify-center items-center py-1 pl-2 pr-3 rounded-3xl text-black bg-light-gray">
+                    <img src={circle} alt="circle" className="mr-1" /> Dismiss
+                    all
+                  </button>
+                </div>
+                <div className="flex justify-between bg-white-bg bg-cover mt-5 text-black w-full p-6">
+                  <div className="flex items-start w-auto">
+                    <div className="mr-3 relative w-10">
+                      <img
+                        src={Rosario}
+                        alt="Rosario-img"
+                        className="w-10 h-10"
+                      />
+                      <img
+                        src={RosarioIcon}
+                        alt="Rosario-icon"
+                        className="absolute -bottom-1 -right-1"
+                      />
+                    </div>
+                    <div className="flex flex-col w-14 ">
+                      <p className="font-medium text-sm">Rosario</p>
+                      <p className=" text-sm font-extralight w-full">
+                        just now
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col pl-8">
+                    <h3 className="font-bold">Showcasing Customers</h3>
+                    <p className="text-sm  mt-3 w-full">
+                      Our customers have continued to send in pictures of their
+                      finished artwork...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2 pl-12 text-justify justify-center">
+              <h3 className="text-xl font-medium">Start thread</h3>
+              <p className="text-sm mt-3 font-light tracking-widest">
+                Technology trends have the potential to drive significant
+                disruption and deliver significant opportunity. Digital trends
+                such as autonomous things, blockchain, digital twins and smart
+                spaces are rapidly approaching maturity.
+              </p>
+            </div>
+          </div>
+          <div className="flex mt-20">
+            <div className="flex items-center  w-1/2">
+              <div className="flex flex-col">
+                <div className="flex justify-between">
+                  <h3 className="flex items-center">Recent</h3>
+                  <div className="flex justify-center items-center py-1 pl-2 pr-3 rounded-3xl text-black bg-light-gray">
+                    Unread
+
+                    <label htmlFor="toggle-switch" className="flex ml-3">
+                      <input type="checkbox"  id="toggle-switch" className="cursor-pointer h-7 w-14 rounded-full appearance-none bg-white bg-opacity-5 checked:bg-[#ff1640] transition-all duration-300 relative" />
+                    </label>
+                   
+
+                   
+                  </div>
+                </div>
+                <div className="flex justify-between bg-white-bg bg-cover mt-5 text-black w-full p-6">
+                  <div className="flex items-start w-auto">
+                    <div className="mr-3 relative w-10">
+                      <img src={Dan} alt="Dan-img" className="w-10 h-10" />
+                      <img
+                        src={DanIcon}
+                        alt="Dan-icon"
+                        className="absolute -bottom-1 -right-1"
+                      />
+                    </div>
+                    <div className="flex flex-col w-14 ">
+                      <p className="font-medium text-sm">Dan</p>
+                      <p className=" text-sm font-extralight w-full">
+                        2 hrs ago
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col pl-8">
+                    <h3 className="font-bold">Thoughts on attendin...</h3>
+                    <p className="text-sm  mt-3 w-full">
+                      Our customers have continued to send in pictures of their
+                      finished artwork...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col w-1/2 pl-12 text-justify justify-center">
+              <h3 className="text-xl font-medium">Mark the decision</h3>
+              <p className="text-sm mt-3 font-light tracking-widest">
+                This continuous technology innovation will enable the alignment
+                of the physical and digital worlds and create competitive
+                advantage for some. Are you ready?
+              </p>
+            </div>
           </div>
         </div>
       </div>
