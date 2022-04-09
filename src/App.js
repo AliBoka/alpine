@@ -5,7 +5,7 @@ import './index.css'
 
 function App() {
   return (
-    <div className="bg-first-bg h-[3000px] bg-contain bg-no-repeat">
+    <div className="bg-first-bg h-[3000px] bg-contain xl:bg-cover bg-no-repeat">
       <Navbar/>
       <Main/>
     </div>
