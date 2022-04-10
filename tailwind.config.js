@@ -11,6 +11,7 @@ module.exports = {
         'bg-logo' : "url('/src/assets/logo-img.png')",
         'linear-bg' : "linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%)",
          'white-bg' : "url('/src/assets/Rectangle 13.png')",
+         'footer-bg' : "url('/src/assets/footer2.png')"
       },
       colors : {
         'rgba-gray' : 'rgba(255, 255, 255, 0.2)',
