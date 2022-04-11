@@ -7,7 +7,7 @@ import './index.css'
 
 function App() {
   return (
-    <div className="app h-auto bg-contain  bg-no-repeat">
+    <div className="app h-auto  bg-contain bg-no-repeat w-full">
       <Navbar/>
       <Main/>
       <Bottom/>
