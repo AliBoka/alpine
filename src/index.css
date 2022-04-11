@@ -16,5 +16,9 @@
 .app {
   background-image: url("assets/first-bg.png"), 
     url("assets/second-bg.png"), url("assets/bg-footer.jpg");
-  background-repeat: no-repeat , repeat
+  background-repeat: no-repeat , repeat;
+
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
