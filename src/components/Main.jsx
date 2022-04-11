@@ -16,18 +16,16 @@ import Rosario from "../assets/Rosario-img.png";
 import RosarioIcon from "../assets/Rosario-icon.png";
 import Dan from "../assets/Dan-img.png";
 import DanIcon from "../assets/Dan-icon.png";
-import Switch from "react-switch";
 
 const Main = () => {
-  const [toggled, setToggled] = useState(true);
   return (
     <div className="flex flex-col relative mx-8 md:mx-28 xl:mx-36 mt-14 px-6 py-12 bg-linear-bg  shadow-rgba-shadow border-rgba-gray text-white">
-      <div className="w-96 flex flex-col">
+      <div className="w-96 xl:w-[35rem] flex flex-col">
         <div className="font-paytoneone mb-3">
-          <h1 className="text-4xl">ALPINE</h1>
-          <h4 className="text-lg mt-1">SOCIAL MEDIA MARKETING PLATFORM</h4>
+          <h1 className="text-4xl xl:text-6xl">ALPINE</h1>
+          <h4 className="text-lg xl:text-2xl mt-1">SOCIAL MEDIA MARKETING PLATFORM</h4>
         </div>
-        <p className="text-justify">
+        <p className="text-justify xl:text-xl">
           The core systems of record for marketing that provide a common way of
           orchestring the experiences across channels and applications,
           including operational managment and measurement, with the ultimate
@@ -37,9 +35,9 @@ const Main = () => {
           <input
             type="text"
             placeholder="Enter your work email !"
-            className="rounded-full bg-transparent bord border-2 border-rgba-white text-sm box-border pt-[2px] pb-1 px-6 mr-3 w-9/12 placeholder:text-xs "
+            className="rounded-full bg-transparent  border-2 border-rgba-white text-sm xl:text-lg box-border pt-[2px] pb-1 px-6 mr-3 w-9/12 placeholder:text-xs xl:placeholder:text-sm "
           />
-          <button className="rounded-full bg-transparent bord border-2 border-[#FF1640] text-xs box-border px-2 flex  py-[7px] justify-center items-center mr-3 w-4/12 text-rgba-white hover:bg-[#FF1640] hover:text-white">
+          <button className="rounded-full bg-transparent bord border-2 border-[#FF1640] text-xs box-border px-2 flex  py-[7px] justify-center items-center mr-3 w-4/12 text-rgba-white hover:bg-[#FF1640] hover:text-white xl:text-sm">
             Request access
           </button>
         </div>
@@ -47,23 +45,23 @@ const Main = () => {
       <div className="border-t border-rgba-gray mt-14 w-full  "></div>
       <div className="flex flex-col">
         <div
-          className="my-3 p-4 w-full flex h-9 justify-center items-center mx-2
+          className="my-3 p-4 px-8 xl:px-14 w-full flex h-9 justify-between items-center mx-2
   "
         >
           <img
-            className=" mr-4 mb-2 cursor-pointer"
+            className="  mb-2 cursor-pointer"
             src={facebook}
             alt="facebook"
           />
-          <img className=" mr-4 cursor-pointer" src={insta} alt="insta" />
-          <img className=" mr-4 cursor-pointer" src={twitter} alt="twitter" />
-          <img className=" mr-4 cursor-pointer" src={youtube} alt="youtube" />
+          <img className="  cursor-pointer" src={insta} alt="insta" />
+          <img className="  cursor-pointer" src={twitter} alt="twitter" />
+          <img className="  cursor-pointer" src={youtube} alt="youtube" />
           <img
-            className=" mr-4 cursor-pointer"
+            className="  cursor-pointer"
             src={pinterest}
             alt="pinterest"
           />
-          <img className=" mr-4 cursor-pointer" src={google} alt="google" />
+          <img className="  cursor-pointer" src={google} alt="google" />
         </div>
         <div className="flex flex-col">
           <div className="grid grid-flow-col w-full px-5 py-7 relative ">
@@ -124,8 +122,8 @@ const Main = () => {
                     </div>
                   </div>
                   <div className="flex flex-col pl-8">
-                    <h3 className="font-bold">Showcasing Customers</h3>
-                    <p className="text-sm  mt-3 w-full">
+                    <h3 className="font-bold xl:text-xl">Showcasing Customers</h3>
+                    <p className="text-sm xl:text-lg  mt-3 w-full">
                       Our customers have continued to send in pictures of their
                       finished artwork...
                     </p>
@@ -134,8 +132,8 @@ const Main = () => {
               </div>
             </div>
             <div className="flex flex-col w-1/2 pl-12 text-justify justify-center">
-              <h3 className="text-xl font-medium">Start thread</h3>
-              <p className="text-sm mt-3 font-light tracking-widest">
+              <h3 className="text-xl xl:text-2xl xl:font-bold font-medium">Start thread</h3>
+              <p className="text-sm xl:text-lg mt-3 font-light tracking-widest">
                 Technology trends have the potential to drive significant
                 disruption and deliver significant opportunity. Digital trends
                 such as autonomous things, blockchain, digital twins and smart
@@ -177,8 +175,8 @@ const Main = () => {
                     </div>
                   </div>
                   <div className="flex flex-col pl-8">
-                    <h3 className="font-bold">Thoughts on attendin...</h3>
-                    <p className="text-sm  mt-3 w-full">
+                    <h3 className="font-bold xl:text-xl">Thoughts on attendin...</h3>
+                    <p className="text-sm xl:text-lg  mt-3 w-full">
                       Our customers have continued to send in pictures of their
                       finished artwork...
                     </p>
@@ -187,8 +185,8 @@ const Main = () => {
               </div>
             </div>
             <div className="flex flex-col w-1/2 pl-12 text-justify justify-center">
-              <h3 className="text-xl font-medium">Mark the decision</h3>
-              <p className="text-sm mt-3 font-light tracking-widest">
+              <h3 className="text-xl xl:text-2xl xl:font-bold font-medium">Mark the decision</h3>
+              <p className="text-sm xl:text-lg mt-3 font-light tracking-widest">
                 This continuous technology innovation will enable the alignment
                 of the physical and digital worlds and create competitive
                 advantage for some. Are you ready?
